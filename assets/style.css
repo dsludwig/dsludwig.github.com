@@ -1,0 +1,12 @@
+#wrapper {
+  min-width: 500px;
+  max-width: 1000px;
+  left: auto;
+  right: auto;
+}
+
+#header {
+  min-height: 200px;
+  color: #fff;
+  background-color: #cc3333;
+}
