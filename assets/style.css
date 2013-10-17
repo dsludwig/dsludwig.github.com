@@ -1,12 +1,13 @@
-#wrapper {
-  min-width: 500px;
-  max-width: 1000px;
-  left: auto;
-  right: auto;
+@font-face {
+  font-family: "Norwester";
+  /* src: url("/assets/vendors/norwester-v1.2/webfonts/norwester.ttf"); */
+  src: url("/assets/vendors/norwester-v1.2/webfonts/norwester.eot"); /* IE9 Compat Modes */
+  src: url("/assets/vendors/norwester-v1.2/webfonts/norwester.eot") format('embedded-opentype'), /* IE6-IE8 */
+       url("/assets/vendors/norwester-v1.2/webfonts/norwester.woff") format('woff'), /* Modern Browsers */
+       url("/assets/vendors/norwester-v1.2/webfonts/norwester.ttf")  format('truetype'), /* Safari, Android, iOS */
+       url("/assets/vendors/norwester-v1.2/webfonts/norwester.svg#norwesterregular") format('svg'); /* Legacy iOS */
 }
 
-#header {
-  min-height: 200px;
-  color: #fff;
-  background-color: #cc3333;
+h1, h2, h3, h4, h5 {
+  font-family: "Norwester", "Helvetica Neue", 'Helvetica', 'Arial', sans-serif;
 }
