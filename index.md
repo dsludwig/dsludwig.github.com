@@ -2,9 +2,17 @@
 layout: default
 title: Derek Ludwig
 ---
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+
+{% for post in site.posts %}
+  <article>
+    {% if forloop.first == false %}
+      <hr>
+    {% endif %}
+    <h3><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
+    <h6>{{ post.date | date_to_string }}</h6>
+    
+    {{ post.excerpt }}
+  </article>
+  
+{% endfor %}
 
