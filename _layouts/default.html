@@ -2,18 +2,30 @@
 <html>
   <head>
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/vendors/foundation/stylesheets/foundation.min.css" >
+    <link rel="stylesheet" href="/assets/vendors/foundation-4.3.2/css/foundation.min.css" >
     <link rel="stylesheet" href="/assets/style.css" >
     <meta charset="utf-8">
   </head>
   <body>
-    <header id="header" class="row"><h1> <a href="/">A Blog.</a> </h1> </header>
+    <header id="header" class="row">
+      <div class="large-12 columns">
+        <h1> <a href="/">A Blog.</a> </h1>
+      </div>
+    </header>
+
     <div id="content" class="row">
-      {{ content }}
+      <div class="large-12 columns" role="content">
+        {{ content }}
+      </div>
     </div>
+
     <footer id="footer" class="row">
-    &copy; Derek Ludwig 2012
+    <div class="large-12 columns">
+      <hr>
+      <p>&copy; Derek Ludwig 2012-2013</p>
+    </div>
     </footer>
-    <script src="/assets/vendors/foundation/javascripts/foundation.min.js"></script>
+
+    <script src="/assets/vendors/foundation-4.3.2/js/foundation.min.js"></script>
   </body>
 </html>
